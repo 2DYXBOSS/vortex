@@ -667,7 +667,7 @@ header
 }
 
 .header-area.header-sticky {
-  min-height: auto;
+  min-height: auto!important;
 }
 
 .header-area .nav {
