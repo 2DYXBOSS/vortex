@@ -13,15 +13,21 @@
 
     <title>Vortex Group</title>
 
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="../assets/css/fontawesome.css">
-    <link rel="stylesheet" href="../assets/css/templatemo-onix-digital.css">
-    <link rel="stylesheet" href="../assets/css/animated.css">
-    <link rel="stylesheet" href="../assets/css/owl.css">
+    <link rel="stylesheet" href="../assets/css/articles.css">
+    <link rel="stylesheet" href="../assets/css/art-animate.css">
+    <link rel="stylesheet" href="../assets/css/art-owl.css">
     <script src="../assets/js/produit.js"></script>
     <!--
 
@@ -36,24 +42,70 @@ https://vortex-group.presducoeurdesenfants.org//tm-565-onix-digital
 <body>
 
     <!-- ***** Preloader End ***** -->
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" style="box-shadow: 0px 2px 3px rgba(160, 160, 160, 0.1);">
+                        <div class="container" >
+                            <!-- ***** Logo ***** -->
+                            <a class="navbar-brand" href="index.html">
+                                <img src="../assets/images/logo.png" height="45" alt="Logo">
+                            </a>
+
+                            <!-- ***** Menu Hamburger (Mobile) ***** -->
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <!-- ***** Menu ***** -->
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ms-auto " style="font-weight: 500;
+                                font-size: 15px;
+                                color: rgb(42, 42, 42);
+                                text-transform: capitalize;">
+                                    <li class="scroll-to-section"><a class="nav-link" href="/index.html">Accueil</a></li>
+                                    <li class="scroll-to-section"><a class="nav-link" href="/index.html#about">À propos</a></li>
+                                    <li class="scroll-to-section"><a class="nav-link" href="/index.html#services">Services</a>
+                                    </li>
+                                    <li class="scroll-to-section"><a class="nav-link active"
+                                            href="/templates/article.html">Produits</a></li>
+                                    <li class="scroll-to-section"><a class="nav-link" href="/index.html#video">Partenaires</a>
+                                    </li>
+                                    <li class="scroll-to-section"><a class="nav-link" href="/index.html#map">Contact</a></li>
+                                    <li class="scroll-to-section ms-4">
+                                        <div class="main-red-button-hover"><a href="/templates/article.html">Voir les
+                                            produits</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <!-- <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
+
                         <a href="index.html" class="logo">
-                            <img src="../assets/images/logo.png" height="45px" style="max-height: 45px!important;max-width: 100px!important;">
+                            <img src="../assets/images/logo.png" height="45px"
+                                style="max-height: 45px!important;max-width: 100px!important;">
                         </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="/index.html" >Acceuil</a></li>
+                            <li class="scroll-to-section"><a href="/index.html">Acceuil</a></li>
                             <li class="scroll-to-section"><a href="/index.html#about">A propos</a></li>
                             <li class="scroll-to-section"><a href="/index.html#services">Services</a></li>
-                            <li class="scroll-to-section"><a href="/templates/article.html" class="active">Produits</a></li>
+                            <li class="scroll-to-section"><a href="/templates/article.html" class="active">Produits</a>
+                            </li>
                             <li class="scroll-to-section"><a href="/index.html#video">Partenaires</a></li>
                             <li class="scroll-to-section"><a href="/index.html#map">Contact nous</a></li>
                             <li class="scroll-to-section">
@@ -61,15 +113,16 @@ https://vortex-group.presducoeurdesenfants.org//tm-565-onix-digital
                                         produits</a></div>
                             </li>
                         </ul>
-                        <a class='menu-trigger menu-triggers'>
+                        <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
-                        <!-- ***** Menu End ***** -->
+
                     </nav>
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
+
     <div id="video" class="our-videos section">
         <div class="videos-left-dec">
             <img src="../assets/images/videos-left-dec.png" alt="">
@@ -218,7 +271,8 @@ https://vortex-group.presducoeurdesenfants.org//tm-565-onix-digital
                                         </div>
 
                                         <!-- Bouton Lire plus -->
-                                        <button onclick="toggleContent('more-content4')" class="btn btn-link more-content41"
+                                        <button onclick="toggleContent('more-content4')"
+                                            class="btn btn-link more-content41"
                                             style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire
                                             plus</button>
 
@@ -1610,435 +1664,455 @@ https://vortex-group.presducoeurdesenfants.org//tm-565-onix-digital
 
                 <img src="../assets/images/hik.png" style="width: 150px!important;" class="mt-4 mb-0"
                     style="width: 50px!important;box-shadow: 1px 1px 5px 1px rgb(197, 196, 196);" alt="">
-            
-            <p style="text-transform: capitalize;font-weight: 500;" class="text-start">Une experience client qui stimule
-                la croissance de l'entreprise </p>
-            <p class="text-start" style="font-size: 0.8rem;">Allez au dela d'un simple PBX avec toutes les
-                communications integrees en une seulee . Le systeme telephonique professional Yeastar est
-                disponible en tant que solution cloud , materielele ou logicielle selon vos preferences ,
-                'Telephone de travail' ,'Centre d'appel ' </p>
-            <div class="row">
+
+                <p style="text-transform: capitalize;font-weight: 500;" class="text-start">Une experience client qui
+                    stimule
+                    la croissance de l'entreprise </p>
+                <p class="text-start" style="font-size: 0.8rem;">Allez au dela d'un simple PBX avec toutes les
+                    communications integrees en une seulee . Le systeme telephonique professional Yeastar est
+                    disponible en tant que solution cloud , materielele ou logicielle selon vos preferences ,
+                    'Telephone de travail' ,'Centre d'appel ' </p>
+                <div class="row">
 
 
-                <div class="col-md-3 mt-2">
-                    <div class="card border-0">
-                        <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
-                            <img src="../assets/images/dvsr.png" class="mt-4" style="width: 150px!important;" alt="">
-                        </div>
-                        <p style="text-transform: capitalize;font-weight: 500;" class="text-center">barre anti panique
-                            XS4
-                        </p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
-                            max . 300/500</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
-
-
-                        <!-- Contenu caché par défaut -->
-                        <div id="more-content37" style="display: none;">
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                    <div class="col-md-3 mt-2">
+                        <div class="card border-0">
+                            <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
+                                <img src="../assets/images/dvsr.png" class="mt-4" style="width: 150px!important;"
+                                    alt="">
+                            </div>
+                            <p style="text-transform: capitalize;font-weight: 500;" class="text-center">barre anti
+                                panique
+                                XS4
                             </p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
-                            </p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
+                                max . 300/500</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
 
 
+                            <!-- Contenu caché par défaut -->
+                            <div id="more-content37" style="display: none;">
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                                </p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
+                                </p>
+
+
+                            </div>
+
+                            <!-- Bouton Lire plus -->
+                            <button onclick="toggleContent('more-content37')" class="btn btn-link more-content371"
+                                style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                         </div>
-
-                        <!-- Bouton Lire plus -->
-                        <button onclick="toggleContent('more-content37')" class="btn btn-link more-content371"
-                            style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                     </div>
-                </div>
-                <div class="col-md-3 mt-2">
-                    <div class="card border-0">
-                        <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
-                            <img src="../assets/images/cals2.png" class="mt-4" style="width: 150px!important;" alt="">
-                        </div>
-                        <p style="text-transform: capitalize;font-weight: 500;" class="text-center">poinier finition en
-                            acier inox
-                        </p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
-                            max . 300/500</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
-
-
-                        <!-- Contenu caché par défaut -->
-                        <div id="more-content38" style="display: none;">
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                    <div class="col-md-3 mt-2">
+                        <div class="card border-0">
+                            <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
+                                <img src="../assets/images/cals2.png" class="mt-4" style="width: 150px!important;"
+                                    alt="">
+                            </div>
+                            <p style="text-transform: capitalize;font-weight: 500;" class="text-center">poinier finition
+                                en
+                                acier inox
                             </p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
-                            </p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
+                                max . 300/500</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
 
 
+                            <!-- Contenu caché par défaut -->
+                            <div id="more-content38" style="display: none;">
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                                </p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
+                                </p>
+
+
+                            </div>
+
+                            <!-- Bouton Lire plus -->
+                            <button onclick="toggleContent('more-content38')" class="btn btn-link more-content381"
+                                style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                         </div>
-
-                        <!-- Bouton Lire plus -->
-                        <button onclick="toggleContent('more-content38')" class="btn btn-link more-content381"
-                            style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                     </div>
-                </div>
 
-                <div class="col-md-3 mt-2">
-                    <div class="card border-0">
-                        <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
-                            <img src="../assets/images/cajjd.png" class="mt-4" style="width: 150px!important;" alt="">
-                        </div>
-                        <p style="text-transform: capitalize;font-weight: 500;" class="text-center"> Yeastar P570
-                        </p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
-                            max . 300/500</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
-
-
-                        <!-- Contenu caché par défaut -->
-                        <div id="more-content39" style="display: none;">
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                    <div class="col-md-3 mt-2">
+                        <div class="card border-0">
+                            <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
+                                <img src="../assets/images/cajjd.png" class="mt-4" style="width: 150px!important;"
+                                    alt="">
+                            </div>
+                            <p style="text-transform: capitalize;font-weight: 500;" class="text-center"> Yeastar P570
                             </p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
-                            </p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
+                                max . 300/500</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
 
 
+                            <!-- Contenu caché par défaut -->
+                            <div id="more-content39" style="display: none;">
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                                </p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
+                                </p>
+
+
+                            </div>
+
+                            <!-- Bouton Lire plus -->
+                            <button onclick="toggleContent('more-content39')" class="btn btn-link more-content391"
+                                style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                         </div>
-
-                        <!-- Bouton Lire plus -->
-                        <button onclick="toggleContent('more-content39')" class="btn btn-link more-content391"
-                            style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                     </div>
-                </div>
-                <div class="col-md-3 mt-2">
-                    <div class="card border-0">
-                        <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
-                            <img src="../assets/images/camz1.png" class="mt-4 pt-3" style="width: 150px!important;"
-                                alt="">
-                        </div>
-                        <p style="text-transform: capitalize;font-weight: 500;" class="text-center">GXP2140
-                        </p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
-                            max . 300/500</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
-
-
-                        <!-- Contenu caché par défaut -->
-                        <div id="more-content40" style="display: none;">
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                    <div class="col-md-3 mt-2">
+                        <div class="card border-0">
+                            <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
+                                <img src="../assets/images/camz1.png" class="mt-4 pt-3" style="width: 150px!important;"
+                                    alt="">
+                            </div>
+                            <p style="text-transform: capitalize;font-weight: 500;" class="text-center">GXP2140
                             </p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
-                            </p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
+                                max . 300/500</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
 
 
+                            <!-- Contenu caché par défaut -->
+                            <div id="more-content40" style="display: none;">
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                                </p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
+                                </p>
+
+
+                            </div>
+
+                            <!-- Bouton Lire plus -->
+                            <button onclick="toggleContent('more-content40')" class="btn btn-link more-content401"
+                                style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                         </div>
-
-                        <!-- Bouton Lire plus -->
-                        <button onclick="toggleContent('more-content40')" class="btn btn-link more-content401"
-                            style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                     </div>
+
+
+
+
+
                 </div>
-
-
 
 
 
             </div>
+            <div class="mb-3 ">
 
 
+                <img src="../assets/images/alhua.png" style="width: 150px!important;" class="mt-4 mb-0"
+                    style="width: 50px!important;box-shadow: 1px 1px 5px 1px rgb(197, 196, 196);" alt="">
+                <p style="text-transform: capitalize;font-weight: 500;" class="text-start">Une experience client qui
+                    stimule
+                    la croissance de l'entreprise </p>
+                <p class="text-start" style="font-size: 0.8rem;">Allez au dela d'un simple PBX avec toutes les
+                    communications integrees en une seulee . Le systeme telephonique professional Yeastar est
+                    disponible en tant que solution cloud , materielele ou logicielle selon vos preferences ,
+                    'Telephone de travail' ,'Centre d'appel ' </p>
+                <div class="row">
 
-        </div>
-        <div class="mb-3 ">
-
-
-            <img src="../assets/images/alhua.png" style="width: 150px!important;" class="mt-4 mb-0"
-                style="width: 50px!important;box-shadow: 1px 1px 5px 1px rgb(197, 196, 196);" alt="">
-            <p style="text-transform: capitalize;font-weight: 500;" class="text-start">Une experience client qui stimule
-                la croissance de l'entreprise </p>
-            <p class="text-start" style="font-size: 0.8rem;">Allez au dela d'un simple PBX avec toutes les
-                communications integrees en une seulee . Le systeme telephonique professional Yeastar est
-                disponible en tant que solution cloud , materielele ou logicielle selon vos preferences ,
-                'Telephone de travail' ,'Centre d'appel ' </p>
-            <div class="row">
-
-                <div class="col-md-3 mt-2">
-                    <div class="card border-0">
-                        <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
-                            <img src="../assets/images/cajjd.png" class="mt-4" style="width: 150px!important;" alt="">
-                        </div>
-                        <p style="text-transform: capitalize;font-weight: 500;" class="text-center"> Yeastar P570
-                        </p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
-                            max . 300/500</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
-
-
-                        <!-- Contenu caché par défaut -->
-                        <div id="more-content41" style="display: none;">
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                    <div class="col-md-3 mt-2">
+                        <div class="card border-0">
+                            <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
+                                <img src="../assets/images/cajjd.png" class="mt-4" style="width: 150px!important;"
+                                    alt="">
+                            </div>
+                            <p style="text-transform: capitalize;font-weight: 500;" class="text-center"> Yeastar P570
                             </p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
-                            </p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
+                                max . 300/500</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
 
 
+                            <!-- Contenu caché par défaut -->
+                            <div id="more-content41" style="display: none;">
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                                </p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
+                                </p>
+
+
+                            </div>
+
+                            <!-- Bouton Lire plus -->
+                            <button onclick="toggleContent('more-content41')" class="btn btn-link more-content411"
+                                style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                         </div>
-
-                        <!-- Bouton Lire plus -->
-                        <button onclick="toggleContent('more-content41')" class="btn btn-link more-content411"
-                            style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                     </div>
-                </div>
 
-                <div class="col-md-3 mt-2">
-                    <div class="card border-0">
-                        <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
-                            <img src="../assets/images/camz1.png" class="mt-4" style="width: 150px!important;" alt="">
-                        </div>
-                        <p style="text-transform: capitalize;font-weight: 500;" class="text-center">GXP2140
-                        </p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
-                            max . 300/500</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
-
-
-                        <!-- Contenu caché par défaut -->
-                        <div id="more-content42" style="display: none;">
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                    <div class="col-md-3 mt-2">
+                        <div class="card border-0">
+                            <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
+                                <img src="../assets/images/camz1.png" class="mt-4" style="width: 150px!important;"
+                                    alt="">
+                            </div>
+                            <p style="text-transform: capitalize;font-weight: 500;" class="text-center">GXP2140
                             </p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
-                            </p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
+                                max . 300/500</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
 
 
+                            <!-- Contenu caché par défaut -->
+                            <div id="more-content42" style="display: none;">
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                                </p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
+                                </p>
+
+
+                            </div>
+
+                            <!-- Bouton Lire plus -->
+                            <button onclick="toggleContent('more-content42')" class="btn btn-link more-content421"
+                                style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                         </div>
-
-                        <!-- Bouton Lire plus -->
-                        <button onclick="toggleContent('more-content42')" class="btn btn-link more-content421"
-                            style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                     </div>
-                </div>
 
-                <div class="col-md-3 mt-2">
-                    <div class="card border-0">
-                        <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
-                            <img src="../assets/images/cals2.png" class="mt-4" style="width: 150px!important;" alt="">
-                        </div>
-                        <p style="text-transform: capitalize;font-weight: 500;" class="text-center">poinier finition en
-                            acier inox
-                        </p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
-                            max . 300/500</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
-
-
-                        <!-- Contenu caché par défaut -->
-                        <div id="more-content43" style="display: none;">
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                    <div class="col-md-3 mt-2">
+                        <div class="card border-0">
+                            <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
+                                <img src="../assets/images/cals2.png" class="mt-4" style="width: 150px!important;"
+                                    alt="">
+                            </div>
+                            <p style="text-transform: capitalize;font-weight: 500;" class="text-center">poinier finition
+                                en
+                                acier inox
                             </p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
-                            </p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
+                                max . 300/500</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
 
 
+                            <!-- Contenu caché par défaut -->
+                            <div id="more-content43" style="display: none;">
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                                </p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
+                                </p>
+
+
+                            </div>
+
+                            <!-- Bouton Lire plus -->
+                            <button onclick="toggleContent('more-content43')" class="btn btn-link more-content431"
+                                style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                         </div>
-
-                        <!-- Bouton Lire plus -->
-                        <button onclick="toggleContent('more-content43')" class="btn btn-link more-content431"
-                            style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                     </div>
-                </div>
 
-                <div class="col-md-3 mt-2">
-                    <div class="card border-0">
-                        <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
-                            <img src="../assets/images/dvsr.png" class="mt-4" style="width: 150px!important;" alt="">
-                        </div>
-                        <p style="text-transform: capitalize;font-weight: 500;" class="text-center">barre anti panique
-                            XS4
-                        </p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
-                            max . 300/500</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
-
-
-                        <!-- Contenu caché par défaut -->
-                        <div id="more-content44" style="display: none;">
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                    <div class="col-md-3 mt-2">
+                        <div class="card border-0">
+                            <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
+                                <img src="../assets/images/dvsr.png" class="mt-4" style="width: 150px!important;"
+                                    alt="">
+                            </div>
+                            <p style="text-transform: capitalize;font-weight: 500;" class="text-center">barre anti
+                                panique
+                                XS4
                             </p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
-                            </p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
+                                max . 300/500</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
 
 
+                            <!-- Contenu caché par défaut -->
+                            <div id="more-content44" style="display: none;">
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                                </p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
+                                </p>
+
+
+                            </div>
+
+                            <!-- Bouton Lire plus -->
+                            <button onclick="toggleContent('more-content44')" class="btn btn-link more-content441"
+                                style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                         </div>
-
-                        <!-- Bouton Lire plus -->
-                        <button onclick="toggleContent('more-content44')" class="btn btn-link more-content441"
-                            style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                     </div>
+
+
+
+
+
                 </div>
-
-
 
 
 
             </div>
+            <div class="section-heading mt-4 text-cente">
+
+                <h2 class="text-start fs-4 " style="padding-top: 50px;">4° Vente et location de vehicules de nouvelle
+                    generation
+                    pour votre confort</h2>
+                <p style="text-transform: capitalize;font-weight: 500;" class="text-start"> Découvrez notre sélction de
+                    produits pour une mobilité tout-en-un !</p>
+            </div>
+            <div style="margin-bottom: 100px;">
 
 
 
-        </div>
-        <div class="section-heading mt-4 text-cente">
-       
-        <h2 class="text-start fs-4 " style="padding-top: 50px;">4° Vente et location de vehicules de nouvelle generation
-            pour votre confort</h2>
-        <p style="text-transform: capitalize;font-weight: 500;" class="text-start"> Découvrez notre sélction de
-            produits pour une mobilité tout-en-un !</p>
-        </div>
-        <div style="margin-bottom: 100px;">
+                <div class="row">
 
-
-
-            <div class="row">
-
-                <div class="col-md-3 mt-2">
-                    <div class="card border-0">
-                        <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
-                            <img src="../assets/images/voi2.png" class="mt-4" style="width: 150px!important;" alt="">
-                        </div>
-                        <p style="text-transform: capitalize;font-weight: 500;" class="text-center"> Yeastar P570
-                        </p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
-                            max . 300/500</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
-
-
-                        <!-- Contenu caché par défaut -->
-                        <div id="more-content45" style="display: none;">
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                    <div class="col-md-3 mt-2">
+                        <div class="card border-0">
+                            <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
+                                <img src="../assets/images/voi2.png" class="mt-4" style="width: 150px!important;"
+                                    alt="">
+                            </div>
+                            <p style="text-transform: capitalize;font-weight: 500;" class="text-center"> Yeastar P570
                             </p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
-                            </p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
+                                max . 300/500</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
 
 
+                            <!-- Contenu caché par défaut -->
+                            <div id="more-content45" style="display: none;">
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                                </p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
+                                </p>
+
+
+                            </div>
+
+                            <!-- Bouton Lire plus -->
+                            <button onclick="toggleContent('more-content45')" class="btn btn-link more-content451"
+                                style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                         </div>
-
-                        <!-- Bouton Lire plus -->
-                        <button onclick="toggleContent('more-content45')" class="btn btn-link more-content451"
-                            style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                     </div>
-                </div>
 
-                <div class="col-md-3 mt-2">
-                    <div class="card border-0">
-                        <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
-                            <img src="../assets/images/voi1.png" class="mt-4" style="width: 150px!important;" alt="">
-                        </div>
-                        <p style="text-transform: capitalize;font-weight: 500;" class="text-center">GXP2140
-                        </p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
-                            max . 300/500</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
-
-
-                        <!-- Contenu caché par défaut -->
-                        <div id="more-content46" style="display: none;">
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                    <div class="col-md-3 mt-2">
+                        <div class="card border-0">
+                            <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
+                                <img src="../assets/images/voi1.png" class="mt-4" style="width: 150px!important;"
+                                    alt="">
+                            </div>
+                            <p style="text-transform: capitalize;font-weight: 500;" class="text-center">GXP2140
                             </p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
-                            </p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
+                                max . 300/500</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
 
 
+                            <!-- Contenu caché par défaut -->
+                            <div id="more-content46" style="display: none;">
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                                </p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
+                                </p>
+
+
+                            </div>
+
+                            <!-- Bouton Lire plus -->
+                            <button onclick="toggleContent('more-content46')" class="btn btn-link more-content461"
+                                style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                         </div>
-
-                        <!-- Bouton Lire plus -->
-                        <button onclick="toggleContent('more-content46')" class="btn btn-link more-content461"
-                            style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                     </div>
-                </div>
 
-                <div class="col-md-3 mt-2">
-                    <div class="card border-0">
-                        <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
-                            <img src="../assets/images/voi3.png" class="mt-4" style="width: 150px!important;" alt="">
-                        </div>
-                        <p style="text-transform: capitalize;font-weight: 500;" class="text-start">poinier finition en
-                            acier inox
-                        </p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
-                            max . 300/500</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
-
-
-                        <!-- Contenu caché par défaut -->
-                        <div id="more-content47" style="display: none;">
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                    <div class="col-md-3 mt-2">
+                        <div class="card border-0">
+                            <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
+                                <img src="../assets/images/voi3.png" class="mt-4" style="width: 150px!important;"
+                                    alt="">
+                            </div>
+                            <p style="text-transform: capitalize;font-weight: 500;" class="text-start">poinier finition
+                                en
+                                acier inox
                             </p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
-                            </p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
+                                max . 300/500</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
 
 
+                            <!-- Contenu caché par défaut -->
+                            <div id="more-content47" style="display: none;">
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                                </p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
+                                </p>
+
+
+                            </div>
+
+                            <!-- Bouton Lire plus -->
+                            <button onclick="toggleContent('more-content47')" class="btn btn-link more-content471"
+                                style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                         </div>
-
-                        <!-- Bouton Lire plus -->
-                        <button onclick="toggleContent('more-content47')" class="btn btn-link more-content471"
-                            style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                     </div>
-                </div>
 
-                <div class="col-md-3 mt-2">
-                    <div class="card border-0">
-                        <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
-                            <img src="../assets/images/voi4.png" class="mt-4 " style="width: 150px!important;" alt="">
-                        </div>
-                        <p style="text-transform: capitalize;font-weight: 500;" class="text-center">barre anti panique
-                            XS4
-                        </p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
-                            max . 300/500</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
-                        <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
-
-
-                        <!-- Contenu caché par défaut -->
-                        <div id="more-content48" style="display: none;">
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                    <div class="col-md-3 mt-2">
+                        <div class="card border-0">
+                            <div style="height: 150px;display: flex;align-items: center;justify-content: center;">
+                                <img src="../assets/images/voi4.png" class="mt-4 " style="width: 150px!important;"
+                                    alt="">
+                            </div>
+                            <p style="text-transform: capitalize;font-weight: 500;" class="text-center">barre anti
+                                panique
+                                XS4
                             </p>
-                            <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
-                            </p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Utlisateurs de base / Utlisateurs
+                                max . 300/500</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Appels simultanés max. 60/120</p>
+                            <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXS max. 16</p>
 
 
+                            <!-- Contenu caché par défaut -->
+                            <div id="more-content48" style="display: none;">
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Ports FXO/BRI max. 16</p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports GSM/3G/4G
+                                </p>
+                                <p class="text-center mb-0" style="font-size: 0.8rem;">Nombre maximal de ports ET1/T1/J1
+                                </p>
+
+
+                            </div>
+
+                            <!-- Bouton Lire plus -->
+                            <button onclick="toggleContent('more-content48')" class="btn btn-link more-content481"
+                                style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                         </div>
-
-                        <!-- Bouton Lire plus -->
-                        <button onclick="toggleContent('more-content48')" class="btn btn-link more-content481"
-                            style="font-size: 0.8rem; color: #007bff; text-decoration: none;">Lire plus</button>
                     </div>
+
+
+
+
+
                 </div>
-
-
 
 
 
             </div>
-
-
-
         </div>
-    </div>
     </div>
 
     </div>
@@ -2053,59 +2127,122 @@ https://vortex-group.presducoeurdesenfants.org//tm-565-onix-digital
     <footer>
         <div class="container">
 
-            <div class="row">
-                <div class="col-lg-3">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-3 text-center">
                     <div class="about footer-item">
                         <div class="logo">
-                            <a href="#"><img src="../assets/images/logo.png" alt="Onix Digital TemplateMo"></a>
+                            <a href="https://vortex-group.net"><img src="../assets/images/logo.png"
+                                    alt="Onix Digital TemplateMo"></a>
                         </div>
-                        <a href="#">info@vortex-group.net</a>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <a href="https://infos@vortex-group.net">infos@vortex-group.net</a>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-whatsapp"></i>
+                                </a></li>
+
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3">
+
+                <div class="col-lg-3 text-center">
                     <div class="services footer-item">
-                        <h4>La direction generale</h4>
-                        <ul>
+                        <h4>La direction générale</h4>
+                        <ul class="list-unstyled">
                             <li><a href="#">(+225) 01 53 48 88 84</a></li>
                             <li><a href="#">(+225) 05 05 42 82 82</a></li>
                             <li><a href="#">(+225) 07 07 14 25 86</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3">
+
+                <div class="col-lg-3 text-center">
                     <div class="community footer-item">
                         <h4>La direction commerciale</h4>
-                        <ul>
+                        <ul class="list-unstyled">
                             <li><a href="#">(+225) 07 59 85 73 64</a></li>
                             <li><a href="#">(+225) 05 66 54 11 55</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3">
+
+                <div class="col-lg-3 text-center">
                     <div class="subscribe-newsletters footer-item">
                         <h4>Site web</h4>
-                        <p>www.vortex-group.net</p>
-
+                        <p><a href="https://vortex-group.net" style="color: #afafaf;">www.vortex-group.net</a></p>
                     </div>
                 </div>
-                <div class="col-lg-12">
+
+                <div class="col-lg-12 text-center">
                     <div class="copyright">
-                        <p>Copyright © 2021 Vortex Group Co., Ltd. All Rights Reserved.
+                        <p>Copyright © 2025 Vortex Group Co., Ltd. Tous droits réservés.
                             <br>
-                            Designed by <a rel="nofollow" href="https://vortex-group.presducoeurdesenfants.org/"
-                                title="Vortex Group">Vortex Group</a>
+                            Designer by <a rel="nofollow" href="https://vortex-group.net" title="Vortex Group">Vortex
+                                Group</a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/art-owl.js"></script>
+    <script src="assets/js/art-animation.js"></script>
+    <script src="assets/js/art-imagesloaded.js"></script>
+    <script src="assets/js/art-custom.js"></script>
+
+    <script>
+        // Acc
+        $(document).on("click", ".naccs .menu div", function () {
+            var numberIndex = $(this).index();
+
+            if (!$(this).is("active")) {
+                $(".naccs .menu div").removeClass("active");
+                $(".naccs ul li").removeClass("active");
+
+                $(this).addClass("active");
+                $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+                var listItemHeight = $(".naccs ul")
+                    .find("li:eq(" + numberIndex + ")")
+                    .innerHeight();
+                $(".naccs ul").height(listItemHeight + "px");
+            }
+        });
+
+
+        // Coordonnées de l'emplacement
+        var lat = 5.3857454;
+        var lng = -3.9526805;
+
+
+        // Initialise la carte et centre la vue
+        var map = L.map('map').setView([lat, lng], 13);
+
+        // Ajoute la couche OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Ajoute un marqueur
+        var marker = L.marker([lat, lng]).addTo(map)
+            .bindPopup('Abidjan, Cocody Angré Bessikoi, cité lonaci')
+            .openPopup();
+
+        // Redirige vers Google Maps au clic
+        function openGoogleMaps() {
+            window.location.href = `https://www.google.com/maps?q=${lat},${lng}`;
+        }
+
+        // Ajoute un événement de clic sur le marqueur et la carte
+        marker.on('click', openGoogleMaps);
+        map.on('click', openGoogleMaps);
+    </script>
 </body>
 
 </html>

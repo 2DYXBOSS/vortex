@@ -33,6 +33,46 @@ font & reset css
 reset
 --------------------------------------------- 
 */
+.navbar-toggler[aria-expanded="true"] , .navbar-toggler[aria-expanded="true"]:hover , .navbar-toggler[aria-expanded="true"]:focus , .navbar-toggler[aria-expanded="true"]:active , .navbar-toggler[aria-expanded="false"] , .navbar-toggler[aria-expanded="false"]:hover , .navbar-toggler[aria-expanded="false"]:focus , .navbar-toggler[aria-expanded="false"]:active , .navbar-toggler:focus{
+    border: none!important;
+    outline: none!important;
+    box-shadow: none!important;
+} 
+   
+a .active {
+    color: #ff4a57!important;
+}
+/* Ajustements de base */
+.header-area {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); */
+}
+
+/* Espace sous le menu pour éviter qu'il cache le contenu */
+body {
+    padding-top: 30px;
+}
+
+/* Style du bouton */
+.btn-primary {
+    background-color: #ff4a57;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #e03e4d;
+}
+
+/* Responsive : réduit la taille du logo sur mobile */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 40px;
+    }
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -332,7 +372,7 @@ header
   left: 0px;
   right: 0px;
   z-index: 100;
-  height: 100px;
+  height: auto!important;
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
   -o-transition: all .5s ease 0s;
@@ -627,7 +667,7 @@ header
 }
 
 .header-area.header-sticky {
-  min-height: 80px;
+  min-height: auto;
 }
 
 .header-area .nav {
@@ -662,7 +702,7 @@ header
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   
   .background-header .main-nav .nav {
     margin-top: 80px !important;
@@ -681,7 +721,7 @@ header
   .header-area {
     background-color: #f7f7f7;
     padding: 0px 15px;
-    height: 100px;
+    height: auto!important;
     box-shadow: none;
     text-align: center;
   }
@@ -772,6 +812,10 @@ header
   .pt-20 {
     padding-top: 100px!important;
   }
+  
+}
+@media (min-width: 1200px) {
+ 
   .header-area .main-nav .nav {
     display: flex !important;
   }
@@ -912,7 +956,7 @@ Banner Style
   background-size: cover;
   position: absolute;
   right: 0;
-  top: 100px;
+  top: 60px;
   width: 819px;
   height: 674px;
 }
@@ -960,8 +1004,9 @@ Banner Style
   text-align: center;
   line-height: 46px;
   border-radius: 50%;
-  background: RGB(255, 191, 18);
-  background: linear-gradient(105deg, RGB(255, 191, 18) 0%, RGB(255, 191, 18) 100%);
+  /* background: RGB(255, 191, 18);
+  background: linear-gradient(105deg, RGB(255, 191, 18) 0%, RGB(255, 191, 18) 100%); */
+  background-color: #77BAB3!important;
   color: #fff;
   font-size: 20px;
 }
@@ -2045,3 +2090,6 @@ responsive
     margin-bottom: 20px;
   }
 }
+
+
+
