@@ -2149,6 +2149,9 @@ responsive
   .speci{
     height: 90vh!important;
   }
+  .specit{
+    height: 400px!important;
+  }
   .main-banners .item .down-buttons {
     display: inline-block;
   }
