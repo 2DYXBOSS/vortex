@@ -33,14 +33,35 @@ font & reset css
 reset
 --------------------------------------------- 
 */
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
 .navbar-toggler[aria-expanded="true"] , .navbar-toggler[aria-expanded="true"]:hover , .navbar-toggler[aria-expanded="true"]:focus , .navbar-toggler[aria-expanded="true"]:active , .navbar-toggler[aria-expanded="false"] , .navbar-toggler[aria-expanded="false"]:hover , .navbar-toggler[aria-expanded="false"]:focus , .navbar-toggler[aria-expanded="false"]:active , .navbar-toggler:focus{
     border: none!important;
     outline: none!important;
     box-shadow: none!important;
 } 
-   
+.hovepart , .hoveparts{
+  display: none; 
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.parts:hover .hovepart{
+  width: 100%;background-color: #77BAB3;position: absolute;bottom: -50px;left: 50%;transform: translateX(-50%);padding-bottom: 10px;box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2) ;display: block;
+}
+.parts:hover .nonepart {
+  visibility: hidden;
+}
+.parts:hover .hoveparts {
+  display: block;
+}
+
 a .active {
-    color: #ff4a57!important;
+    color: rgb(8,170,161)!important;
 }
 /* Ajustements de base */
 .header-area {
@@ -213,8 +234,56 @@ body {
   background: RGB(119, 186, 179);
   color: #fff;
 }
+.titre-responsive {
+  font-size: clamp(1.5rem, 4vw, 3.5rem); /* minimum, fluide, maximum */
+  font-weight: 700;
+  line-height: 72px;
+  color: white;
+}
+.titre-responsives {
+  font-size: clamp(1.5rem, 4vw, 3.5rem); /* minimum, fluide, maximum */
+  font-weight: 700;
+  line-height: 72px;
+  color: whiblackte;
+}
 
 @media (max-width: 991px) {
+  .titre-responsives {
+    font-size: clamp(1.5rem, 4vw, 3.5rem); /* minimum, fluide, maximum */
+    font-weight: 700;
+    line-height: 72px;
+    color: black;
+    padding-bottom: 30px;
+  }
+  .titre-responsive {
+    font-size: clamp(1.5rem, 4vw, 3.5rem); /* minimum, fluide, maximum */
+    font-weight: 700;
+    line-height: 52px;
+    color: white;
+  }
+  .navbar-brand {
+    padding-left: 20px;
+  }
+  .navbar-toggler {
+    color: white;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+  }
+  .navbar-toggler[aria-expanded="true"] {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    color: white;
+  }
+  .grd-btn{
+    display: none;
+  }
+  .grd-btns{
+
+    display: flex;
+    justify-content: space-between;
+  }
   html, body {
     overflow-x: hidden;
   }
@@ -309,20 +378,33 @@ body {
 
 .main-red-button-hover a {
   display: inline-block;
-  background-color: RGB(255, 191, 18);
+  background-color: rgb(6, 136, 130);
   font-size: 15px;
   font-weight: 400;
   color: #fff;
   text-transform: capitalize;
   padding: 12px 25px;
-  border-radius: 23px;
+  border-radius: 3px;
+  letter-spacing: 0.25px;
+  transition: all .3s;
+}
+.main-red-button-hovers a {
+  display: inline-block;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border: 1px solid rgb(6, 136, 130);
+  border-radius: 3px;
   letter-spacing: 0.25px;
   transition: all .3s;
 }
 
-.main-red-button-hover a:hover {
+/* .main-red-button-hover a:hover {
   background-color: RGB(119, 186, 179);
-}
+} */
 
 .main-white-button a {
   display: inline-block;
@@ -362,7 +444,7 @@ header
 }
 
 .background-header .nav li a.active {
-  color: RGB(255, 191, 18)!important;
+  color: rgb(8,170,161)!important;
 }
 
 .header-area {
@@ -712,7 +794,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: RGB(255, 191, 18)!important;
+    color: rgb(8,170,161)!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -961,42 +1043,42 @@ Banner Style
   height: 674px;
 }
 
-.main-banner .item {
+.main-banners .item {
   margin-right: 45px;
 }
 
-.main-banner .item h6 {
+.main-banners .item h6 {
   text-transform: uppercase;
   font-size: 18px;
-  color: RGB(255, 191, 18);
+  color: white;
   margin-bottom: 15px;
 }
 
-.main-banner .item h2 {
-  font-size: 50px;
+.main-banners .item h2 {
+  font-size: 70px;
   font-weight: 700;
-  color: #2a2a2a;
+  color: white;
   line-height: 72px;
 }
 
-.main-banner .item h2 em {
-  color: RGB(119, 186, 179);
+.main-banners .item h2 em {
+  color: white;
   font-style: normal;
 }
 
-.main-banner .item h2 span {
-  color: RGB(255, 191, 18);
+.main-banners .item h2 span {
+  color: white;
 }
 
-.main-banner .item p {
+.main-banners .item p {
   margin: 20px 0px;
 }
 
-.main-banner .item .down-buttons {
+.main-banners .item .down-buttons {
   display: inline-flex;
 }
 
-.main-banner .item .down-buttons .call-button i {
+.main-banners .item .down-buttons .call-button i {
   margin-right: 5px;
   width: 46px;
   height: 46px;
@@ -1011,25 +1093,25 @@ Banner Style
   font-size: 20px;
 }
 
-.main-banner .item .down-buttons .call-button a {
+.main-banners .item .down-buttons .call-button a {
   color: RGB(255, 191, 18);
   font-size: 15px;
   font-weight: 500;
   margin-left: 30px;
 }
 
-.main-banner .owl-dots {
+.main-banners .owl-dots {
   margin-top: 60px;
   counter-reset: dots;
 }
 
-.main-banner .owl-dot:before {
+.main-banners .owl-dot:before {
   counter-increment:dots;
   content: counter(dots);
   font-size: 20px;
   font-weight: 500;
   margin-left: 10px;
-  color: #2a2a2a;
+  color: white;
   width: 15px;
   display: inline-block;
   text-align: center;
@@ -1037,7 +1119,7 @@ Banner Style
   transition: all .5s;
 }
 
-.main-banner .active:before {
+.main-banners .active:before {
   color: RGB(255, 191, 18);
   border-bottom: 3px solid RGB(255, 191, 18);
 }
@@ -1990,10 +2072,10 @@ responsive
   .main-banner::before {
     display: none;
   }
-  .main-banner .item {
+  .main-banners .item {
     margin-right: 0px;
   }
-  .main-banner  {
+  .main-banners  {
     padding-bottom: 0px;
   }
   .about-us .section-heading h2 {
@@ -2052,14 +2134,29 @@ responsive
 }
 
 @media (max-width: 767px) {
-  .main-banner .item .down-buttons {
+  .parts{
+    margin-bottom: 30px;
+  }
+  .partseds{
+    text-align: center!important;
+  }
+  .partsed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .speci{
+    height: 90vh!important;
+  }
+  .main-banners .item .down-buttons {
     display: inline-block;
   }
-  .main-banner .item .down-buttons .main-blue-button {
+  .main-banners .item .down-buttons .main-blue-button {
     margin-right: 0px;
     margin-bottom: 15px;
   }
-  .main-banner .item .down-buttons .call-button a {
+  .main-banners .item .down-buttons .call-button a {
     margin-left: 0px;
   }
   .subscribe .inner-content:after {

@@ -6,6 +6,9 @@
 /*
  *  Owl Carousel - Core
  */
+ .owl-item {
+  max-width: 200px!important;
+}  
 .owl-carousel {
   display: none;
   width: 100%;
